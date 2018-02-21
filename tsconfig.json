@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    "declaration": true,
+    "outDir": "./test-suite",
+    "baseUrl": ".",
+    "sourceMap": true
+  },
+  "exclude": [
+    "test-suite",
+    "playground"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "carbonldp-performance-testsuite",
+  "version": "0.0.0",
+  "description": "",
+  "main": "test-suite/index.js",
+  "scripts": {
+    "start": "npm run build && node test-suite --help",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@types/faker": "^4.1.2",
+    "@types/yargs": "^10.0.1",
+    "carbonldp": "^1.0.0-alpha.11",
+    "faker": "^4.1.0",
+    "node-status": "^1.0.0",
+    "symphoner": "^1.0.0-alpha.3",
+    "yargs": "^11.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^9.4.1",
+    "typescript": "^2.7.1"
+  }
+}
