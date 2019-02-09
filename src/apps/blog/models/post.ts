@@ -2,7 +2,7 @@ import { User } from "./user";
 import { Comment } from "./comment";
 import { Like } from "./like";
 
-import * as PersistedDocument from "carbonldp/PersistedDocument";
+import { Document } from "carbonldp/Document";
 
 export let Post = {
 	TYPE: "Post",
@@ -65,4 +65,4 @@ function create( post:Post ) {
 
 }
 
-export type PostP = Post & PersistedDocument.Class;
+export type PostP = Post & Document;

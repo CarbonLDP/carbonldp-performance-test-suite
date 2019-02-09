@@ -1,4 +1,4 @@
-import * as Pointer from "carbonldp/Pointer";
+import { Pointer } from "carbonldp/Pointer";
 import { User } from "./user";
 
 export let Like = {
@@ -20,7 +20,7 @@ export let Like = {
 };
 
 export interface Like {
-	target:Pointer.Class;
+	target:Pointer;
 	author:User;
 	createdOn:Date;
 

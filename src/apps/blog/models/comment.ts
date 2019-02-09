@@ -1,4 +1,4 @@
-import * as PersistedDocument from "carbonldp/PersistedDocument";
+import { Document } from "carbonldp/Document";
 
 import { User } from "./user";
 import { Post } from "./post";
@@ -54,4 +54,4 @@ export interface Comment {
 	[key:string]:any;
 }
 
-export type CommentP = Comment & PersistedDocument.Class;
+export type CommentP = Comment & Document;

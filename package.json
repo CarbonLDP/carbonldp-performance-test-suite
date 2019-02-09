@@ -13,14 +13,14 @@
   "dependencies": {
     "@types/faker": "^4.1.2",
     "@types/yargs": "^10.0.1",
-    "carbonldp": "^1.0.0-alpha.11",
+    "carbonldp": "^5.2.0-alpha.1",
     "faker": "^4.1.0",
     "node-status": "^1.0.0",
     "symphoner": "^1.0.0-alpha.3",
     "yargs": "^11.0.0"
   },
   "devDependencies": {
-    "@types/node": "^9.4.1",
-    "typescript": "^2.7.1"
+    "@types/node": "^10.12.21",
+    "typescript": "^3.2.2"
   }
 }

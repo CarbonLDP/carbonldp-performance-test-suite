@@ -1,12 +1,12 @@
-import { Class as Carbon } from "carbonldp";
+import { CarbonLDP } from "carbonldp";
 import { ActionConfiguration } from "symphoner/dist/actions";
 import { Post, User } from "../models";
 import { bootstrapCarbon } from "../common";
 
 module.exports = async function( configuration:ActionConfiguration ) {
-	const carbon:Carbon = bootstrapCarbon( configuration.settings.carbonldp );
+	const carbonldp:CarbonLDP = bootstrapCarbon( configuration.settings.carbonldp );
 
-	await carbon.documents.getMembers( Post.ENDPOINT, _ => _
+	await carbonldp.documents.$getMembers( Post.ENDPOINT, _ => _
 		.withType( Post.TYPE )
 		.properties( {
 			"author": {
